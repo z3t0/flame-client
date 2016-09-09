@@ -5,20 +5,24 @@
     <title>Flame Client</title>
     <script src="bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
 
   <body>
-      <div class="form">
-          <form action="">
-              User Name:<br>
-              <input type="text" name="user_name" class="form_element"><br>
-              Light:<br>
-              <input type="text" name="light" class="form_element">
-              <br>
-              <input type="submit" value="Submit" class="form_element">
-          </form>
-      </div>
-
+      <section class="container">
+          <div class="login">
+              <h1>Login to Flame</h1>
+              <form method="post" action="index.html">
+                  <p><input id="user_name" type="text" name="login" value="" placeholder="Username"></p>
+                  <p><input id="password" type="password" name="password" value="" placeholder="Password"></p>
+                  <p class="remember_me">
+                      <label>
+                          <input type="checkbox" name="remember_me" id="remember_me">
+                          Remember me on this computer
+                      </label>
+                  </p>
+                  <p class="submit"><input type="submit" name="commit" value="Login"></p>
+              </form>
+          </div>
+      </section>
   </body>
 </html>
